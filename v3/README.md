@@ -1,3 +1,3 @@
-# Whale Tech Website
+# Whale Tech Website v3
 
-Whale Tech's personal website, now on GitHub!
+The third itteration of the Whale Tech website, made live on 2024/10/28, and will be replaced by v4 soon.
