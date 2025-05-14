@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.brown-theme {
+    background: radial-gradient(circle at left, #1E1405, #4B320E);
+}
+
+.brown-theme .top-bar {
+    background-color: rgba(75, 50, 14, 0.25);
+    color: #ffffff;
+}
+
+.pink-theme {
+    background: radial-gradient(circle at center, #c53b53, #621D29);
+}
+
+.pink-theme .top-bar {
+    background-color: rgba(98, 29, 41, 0.25);
+}
+
+.midnight-theme {
+    background: radial-gradient(circle at bottom, #090a0f, #000);
+}
+
+.midnight-theme .top-bar {
+    background-color: rgba(25, 25, 25, 0.25);
+}
+
+.midnight-theme p {
+    color: #fff
+}
+
+.blue-theme {
+    background: radial-gradient(circle at center, #3d59a1, #7dcfff);
+}
+
+.blue-theme .top-bar {
+    background-color: rgba(57, 75, 112, 0.25);
+}
+
+.legacy-theme {
+    background: radial-gradient(circle at center, #ff721a, #9b8708);
+}
+
+.legacy-theme .top-bar {
+    background-color: #1f2335;
+}
+
+.legacy-theme .section-card {
+    background-color: #1f2335;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #ff6f3c;
+}
+
+a:visited {
+    color: #fff;
+}
+
+li {
+    padding-left: 0;
+    text-align: left;
+    margin-left: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+strong {
+    font-weight: 600;
+  }
+
+.top-bar {
+    padding: 20px 40px;
+    color: #fe9e64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(25, 25, 25, 0.25);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+.top-bar img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.top-bar h1 {
+    font-size: 24px;
+}
+
+.top-icons {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-icons:hover {
+    color: #fe9e64;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-card {
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: 360px;
+    height: 180px;
+    opacity: 0;
+    background-color: rgba(120, 120, 120, 0.05);
+    color: #eee;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    width: 360px;
+    height: 180px;
+    padding: 20px;
+    flex-shrink: 0;
+    font-weight: 200;
+    transform: translateY(20px);
+    animation: fadeInEase 0.6s ease-in forwards;
+}
+
+.section-card.fade-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.section-card:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.card-wide {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 640px; /* or 1200px */
+    margin: 0 auto;     /* center horizontally */
+    height: 180px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #fe9e64;
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .social-icons li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    color: #fff !important;
+    font-size: 28px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons a:hover {
+    color: #fe9e64 !important;
+  }
+
+@keyframes fadeInEase {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

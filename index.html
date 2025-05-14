@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whale Tech's Website (index.html)</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whale Tech's Website (index.html)'</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <body class="brown-theme">
 </head>
 <body>
-  <nav class="sidebar">
-    <h2>
-        <img src="resources/images/profile.jpg" alt="Profile" class="profile-image">
-        Whale Tech
-    </h2>
-    <a href="tutorials">Tutorials</a>
-    <a href="mc">Minecraft Server</a>
-    <div class="mode-switcher">
-        <a id="mode-toggle" href="#">
-            <img id="mode-icon" src="resources/images/dark.svg" alt="Dark Mode">
-        </a>
+  <header class="top-bar">
+    <img src="/assets/logo.jpg" alt="Logo" class="logo" style="border-radius: 25%;"/> <!-- only works with inline styling, for some reason... -->
+    <h1>Whale Tech</h1>
+    <a href="/tutorials" class="top-icons">
+      <i class="fas fa-graduation-cap"></i>
+  </a>
+  </header>
+
+  <section class="welcome">
+    <h2><strong>Welcome!<strong></h2>
+  </section>
+
+  <main class="content">
+    <div class="section-card fade-in">
+      <h2>Bio</h2>
+      <p>Hey! I'm <strong>Whale Tech</strong>, a passionate tech creator with a love for operating systems and computers.</p>
     </div>
-  </nav>
-    <div class="main-container">
-        <header class="main-header">
-            <h1><strong>Welcome!</strong></h1>
-        </header>
 
-        <main class="content">
-            <section id="bio" class="section-card">
-                <h2>Bio</h2>
-                <p>Hey! I'm <strong>Whale Tech</strong>, a passionate tech creator with a love for operating systems and computers..</p>
-            </section>
-
-            <section id="about" class="section-card">
-                <h2>About Me</h2>
-                <p>I'm passionate about creating and experimenting in the tech world, especially when it comes to exploring new operating systems and tinkering with hardware setups.</p>
-            </section>
-        </main>
-
-        <footer id="contact" class="footer">
-            <h2>Contact Me</h2>
-            <p>Let's connect! Feel free to reach out via email or any of my social media channels.</p>
-            <ul class="social-icons">
-                <li><a href="https://youtube.com/@whaletech07" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://github.com/whaletech07" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://steamcommunity.com/id/whaletech07" target="_blank"><i class="fab fa-steam"></i></a></li>
-                <li><a href="https://soundcloud.com/whaletech07" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
-                <li><a href="mailto:contact@whalete.ch"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://discord.gg/BVtYg3c7U3" target="_blank"><i class="fab fa-discord"></i></a></li>
-            </ul>
-        </footer>
+    <div class="section-card fade-in">
+      <h2>Projetcs</h2>
+      <p>Check out some of my recent projects:</p>
+      <ul>
+        <li><a href="https://github.com/whaletech07/note-bot">note-bot</a> - A Discord bot made for taking notes.</li>
+        <li><a href="https://github.com/whaletech07/music">Music</a> - Yes, I make music!</li>
+        And more, <strong>coming soon!™</strong>
+      </ul>
     </div>
-    <script src="script.js"></script>
+
+    <div class="section-card card-wide fade-in">
+      <h2>Links</h2>
+      <ul class="social-icons">
+        <li><a href="https://youtube.com/@whaletech07"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="mailto:contact@whalete.ch"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/whaletech07"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://discord.gg/BVtYg3c7U3"><i class="fab fa-discord"></i></a></li>
+        <li><a href="https://soundcloud.com/whaletech07"><i class="fab fa-soundcloud"></i></a></li>
+        <li><a href="https://whaletech07.bandcamp.com"><i class="fab fa-bandcamp"></i></a></li>
+        <li><a href="https://bsky.app/profile/did:plc:4bnldrj5qvh5yrt3s5odmxhn"><i class="fab fa-bluesky"></i></a></li>
+        <li><a href="https://reddit.com/r/whaletech07"><i class="fab fa-reddit"></i></a></li>
+        <li><a href="https://steamcommunity.com/id/whaletech07"><i class="fab fa-steam"></i></a></li>   
+      </ul>      
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
-
